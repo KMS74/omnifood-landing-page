@@ -1,6 +1,6 @@
 const validator = new JustValidate(".cta-form", {
   tooltip: {
-    position: "left",
+    position: "top",
   },
 });
 
