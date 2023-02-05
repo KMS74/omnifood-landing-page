@@ -4,4 +4,7 @@ Omifood landing page designed with good UX/UI design with fully responsiveness, 
 ## Technologies Used
 - HTML5
 - CSS3
+- AOS library
 - Vanilla javascript
+- Just validate form library
+- Netlify forms
