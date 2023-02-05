@@ -87,7 +87,7 @@
             <picture>
               <source srcset="./img/hero.webp" type="image/webp" />
               <source srcset="./img/hero-min.png" type="image/png" />
-             <!-- fallback image -->
+              <!-- fallback image -->
               <img
                 class="hero-img"
                 src="img/hero-min.png"
@@ -576,13 +576,20 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form class="cta-form" action="#">
+              <form
+                class="cta-form"
+                autocomplete="off"
+                novalidate="novalidate"
+                name="sign-up"
+                netlify
+              >
                 <div>
                   <label for="name">Full Name</label>
                   <input
                     type="text"
                     id="name"
-                    required
+                    name="name"
+                    autocomplete="off"
                     placeholder="John Smith"
                   />
                 </div>
@@ -591,13 +598,14 @@
                   <input
                     type="email"
                     id="email"
-                    required
+                    name="email"
+                    autocomplete="off"
                     placeholder="me@example.com"
                   />
                 </div>
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option value="">Please choose option</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">YouTube video</option>
@@ -706,7 +714,9 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-
+    <!-- just validate form validation -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script defer src="./js/index.js"></script>
+    <script defer src="./js/form.js"></script>
   </body>
 </html>

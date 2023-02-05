@@ -85,10 +85,9 @@
   box-shadow: 0 1.2px 3.2px rgba(0, 0, 0, 0.03);
   z-index: 9999999;
 }
-.sticky .section-hero{
+.sticky .section-hero {
   margin-top: 9.6rem;
 }
-
 
 /* *********************************** */
 /* HERO SECTION  */
@@ -542,6 +541,15 @@
   /* A nice trick for foucs state for CTA form elements */
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* override just-validate tooltip  */
+.just-validate-error-label[data-tooltip="true"] {
+  font-size: 1.8rem;
+  background-color: #f13232 !important;
+}
+.just-validate-error-label[data-tooltip="true"]::before {
+  border-bottom: 5px solid #f13232 !important;
 }
 
 /* *********************************** */
